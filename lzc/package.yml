@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.workout-tracker
-version: 0.3.5
+version: 0.3.6
 name: Workout Tracker
 description: Self-hosted workout tracker for GPX, TCX, and FIT activities with maps, LazyCat Drive import, and SSO.
 author: zhistor26

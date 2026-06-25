@@ -53,6 +53,12 @@ application:
             hooks:
               fileInput: true
               fileSystemAccess: true
+    - id: wt-netdisk-open
+      on: browser
+      when:
+        - /*
+      do:
+        - src: file:///lzcapp/pkg/content/lazycat-injects/lzc-netdisk-open-inject.js
   file_handler:
     mime:
       - x-lzc-extension/gpx
@@ -61,7 +67,7 @@ application:
       - x-lzc-extension/zip
       - application/gpx+xml
     actions:
-      open: /open?file=%u
+      open: /user/signin?import=%u
 
 services:
   workout-tracker:
