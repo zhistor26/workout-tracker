@@ -43,7 +43,7 @@ func (a *App) userSigninHandler(c echo.Context) error {
 		return a.redirectWithError(c, a.echo.Reverse("user-login"), ErrLoginFailed)
 	}
 
-	return c.Redirect(http.StatusFound, a.echo.Reverse("dashboard"))
+	return c.Redirect(http.StatusFound, a.redirectAfterLoginTarget(c))
 }
 
 // userSignoutHandler will log a user out

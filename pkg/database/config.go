@@ -34,6 +34,7 @@ type EnvConfig struct {
 	Offline            bool   `mapstructure:"offline" gorm:"-"`              // Disable calls to external services
 	Compress           bool   `mapstructure:"compress" gorm:"-"`             // Enable gzip compression
 	WorkerDelaySeconds int    `mapstructure:"worker_delay_seconds" gorm:"-"` // Time in seconds between worker runs
+	ProxyAuthEnabled   bool   `mapstructure:"proxy_auth_enabled" gorm:"-"`   // Trust reverse-proxy user headers (LazyCat X-HC-User-ID)
 
 	JWTEncryptionKeyFile string `mapstructure:"jwt_encryption_key_file" gorm:"-"` // File containing the encryption key for JWT
 	DSNFile              string `mapstructure:"dsn_file" gorm:"-"`                // File containing the database DSN

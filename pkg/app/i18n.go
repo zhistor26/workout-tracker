@@ -13,6 +13,7 @@ import (
 const (
 	BrowserLanguage   = "browser"
 	BrowserTheme      = "browser"
+	DefaultLanguage   = "zh-Hans"
 	DefaultTotalsShow = database.WorkoutTypeRunning
 )
 

@@ -23,6 +23,7 @@ func (a *App) ReadConfiguration() error {
 	viper.SetDefault("registration_disabled", false)
 	viper.SetDefault("socials_disabled", false)
 	viper.SetDefault("worker_delay_seconds", 60)
+	viper.SetDefault("proxy_auth_enabled", false)
 
 	for _, envVar := range []string{
 		"bind",
@@ -39,6 +40,7 @@ func (a *App) ReadConfiguration() error {
 		"registration_disabled",
 		"socials_disabled",
 		"worker_delay_seconds",
+		"proxy_auth_enabled",
 	} {
 		if err := viper.BindEnv(envVar); err != nil {
 			return err

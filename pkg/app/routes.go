@@ -64,6 +64,7 @@ func (a *App) ConfigureWebserver() error {
 	}
 
 	e.Use(session.LoadAndSave(a.sessionManager))
+	e.Use(a.ProxyAuthMiddleware)
 	e.Use(a.ContextValueMiddleware)
 	e.Use(func(handlerFunc echo.HandlerFunc) echo.HandlerFunc {
 		return func(context echo.Context) error {
@@ -90,6 +91,7 @@ func (a *App) ConfigureWebserver() error {
 		return c.Redirect(http.StatusFound, a.echo.Reverse("dashboard"))
 	}).Name = "assets"
 	publicGroup.GET("/share/:uuid", a.workoutShowShared).Name = "share"
+	publicGroup.GET("/open", a.openHandler).Name = "open"
 
 	userGroup := publicGroup.Group("/user")
 	userGroup.GET("/signin", a.userLoginHandler).Name = "user-login"

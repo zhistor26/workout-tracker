@@ -1,0 +1,86 @@
+usage: |
+  Workout Tracker 用于记录跑步、骑行等 GPS 运动，支持 GPX / TCX / FIT 导入与地图展示。
+
+  已接入懒猫微服免密登录：使用微服账号自动进入，无需单独注册应用账号。
+  数据保存在应用持久卷 /lzcapp/var/data（容器内 /data），重启不会丢失。
+  JWT 密钥由系统 stable_secret 固定生成，重启后登录态可保持。
+
+  从网页上传或网盘文件选择器导入 GPX / TCX / FIT。在网盘中点击 GPX/FIT/TCX 文件会通过应用关联自动打开并导入。
+  可选自动导入：在应用内路径 /data/imports 放入文件，并在用户资料页将自动导入目录设为 /data/imports。
+
+  基于上游开源项目 https://github.com/jovandeginste/workout-tracker （MIT）
+
+  地图与地理编码需要外网（net.internet）。纯内网环境可在后续版本设置 WT_OFFLINE=true，
+  但地名解析会不可用。
+
+application:
+  subdomain: workout-tracker
+  upstreams:
+    - location: /
+      backend: http://workout-tracker:8080
+      disable_trim_location: true
+  injects:
+    - id: wt-auto-login
+      on: browser
+      when:
+        - /user/signin
+      do:
+        - src: builtin://simple-inject-password
+          params:
+            user: admin
+            password: admin
+            formSelector: "#signin"
+            submitSelector: "form#signin button[type=submit]"
+            autoSubmit: true
+    - id: open-save-chooser
+      on: browser
+      when:
+        - /*
+      do:
+        - src: file:///lzcapp/pkg/content/lazycat-injects/lzc-file-chooser-inject.js
+          params:
+            diskRoot: /_lzc/files/home
+            fallbackMime: application/octet-stream
+            locale: zh-CN
+            text:
+              openTitle: "打开"
+              saveTitle: "保存"
+              openLocal: "从本地打开"
+              openLazyCat: "从懒猫打开"
+              saveLocal: "保存至本地"
+              saveLazyCat: "保存至懒猫"
+              cancel: "取消"
+            hooks:
+              fileInput: true
+              fileSystemAccess: true
+  file_handler:
+    mime:
+      - x-lzc-extension/gpx
+      - x-lzc-extension/fit
+      - x-lzc-extension/tcx
+      - x-lzc-extension/zip
+      - application/gpx+xml
+    actions:
+      open: /open?file=%u
+
+services:
+  workout-tracker:
+    image: registry.lazycat.cloud/u64111927/jovandeginste/workout-tracker:48d2aacdabd63b7e
+    environment:
+      WT_JWT_ENCRYPTION_KEY: '{{ stable_secret "wt_jwt_encryption_key" }}'
+      WT_DATABASE_DRIVER: sqlite
+      WT_DSN: /data/database.db
+      WT_REGISTRATION_DISABLED: "true"
+      WT_PROXY_AUTH_ENABLED: "true"
+    binds:
+      - /lzcapp/var/data:/data
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -sSLf
+        - http://localhost:8080/health
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="workout-tracker-demo">
+  <metadata>
+    <name>周末骑行 25K</name>
+    <time>2026-06-21T08:00:00Z</time>
+  </metadata>
+  <trk>
+    <name>周末骑行 25K</name>
+    <type>cycling</type>
+    <trkseg>
+      <trkpt lat="39.90420" lon="116.40740"><ele>50</ele><time>2026-06-21T08:00:00Z</time></trkpt>
+      <trkpt lat="39.90600" lon="116.41000"><ele>52</ele><time>2026-06-21T08:05:00Z</time></trkpt>
+      <trkpt lat="39.90850" lon="116.41350"><ele>54</ele><time>2026-06-21T08:10:00Z</time></trkpt>
+      <trkpt lat="39.91100" lon="116.41700"><ele>56</ele><time>2026-06-21T08:15:00Z</time></trkpt>
+      <trkpt lat="39.91350" lon="116.42050"><ele>58</ele><time>2026-06-21T08:20:00Z</time></trkpt>
+      <trkpt lat="39.91600" lon="116.42400"><ele>60</ele><time>2026-06-21T08:25:00Z</time></trkpt>
+      <trkpt lat="39.91850" lon="116.42750"><ele>62</ele><time>2026-06-21T08:30:00Z</time></trkpt>
+      <trkpt lat="39.92100" lon="116.43100"><ele>64</ele><time>2026-06-21T08:35:00Z</time></trkpt>
+      <trkpt lat="39.92350" lon="116.43450"><ele>66</ele><time>2026-06-21T08:40:00Z</time></trkpt>
+      <trkpt lat="39.92600" lon="116.43800"><ele>68</ele><time>2026-06-21T08:45:00Z</time></trkpt>
+      <trkpt lat="39.92800" lon="116.44150"><ele>70</ele><time>2026-06-21T08:50:00Z</time></trkpt>
+      <trkpt lat="39.92950" lon="116.44500"><ele>72</ele><time>2026-06-21T08:55:00Z</time></trkpt>
+      <trkpt lat="39.93050" lon="116.44850"><ele>74</ele><time>2026-06-21T09:00:00Z</time></trkpt>
+      <trkpt lat="39.93100" lon="116.45200"><ele>76</ele><time>2026-06-21T09:05:00Z</time></trkpt>
+      <trkpt lat="39.93050" lon="116.45550"><ele>74</ele><time>2026-06-21T09:10:00Z</time></trkpt>
+      <trkpt lat="39.92950" lon="116.45900"><ele>72</ele><time>2026-06-21T09:15:00Z</time></trkpt>
+      <trkpt lat="39.92800" lon="116.46250"><ele>70</ele><time>2026-06-21T09:20:00Z</time></trkpt>
+      <trkpt lat="39.92600" lon="116.46600"><ele>68</ele><time>2026-06-21T09:25:00Z</time></trkpt>
+      <trkpt lat="39.92350" lon="116.46950"><ele>66</ele><time>2026-06-21T09:30:00Z</time></trkpt>
+      <trkpt lat="39.92100" lon="116.47300"><ele>64</ele><time>2026-06-21T09:35:00Z</time></trkpt>
+      <trkpt lat="39.91850" lon="116.47650"><ele>62</ele><time>2026-06-21T09:40:00Z</time></trkpt>
+      <trkpt lat="39.91600" lon="116.48000"><ele>60</ele><time>2026-06-21T09:45:00Z</time></trkpt>
+      <trkpt lat="39.91350" lon="116.48350"><ele>58</ele><time>2026-06-21T09:50:00Z</time></trkpt>
+      <trkpt lat="39.91100" lon="116.48700"><ele>56</ele><time>2026-06-21T09:55:00Z</time></trkpt>
+      <trkpt lat="39.90850" lon="116.49050"><ele>54</ele><time>2026-06-21T10:00:00Z</time></trkpt>
+      <trkpt lat="39.90600" lon="116.49400"><ele>52</ele><time>2026-06-21T10:05:00Z</time></trkpt>
+      <trkpt lat="39.90420" lon="116.40740"><ele>50</ele><time>2026-06-21T10:10:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

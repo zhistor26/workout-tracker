@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="workout-tracker-demo">
+  <metadata>
+    <name>奥森晨跑 5K</name>
+    <time>2026-06-22T06:30:00Z</time>
+  </metadata>
+  <trk>
+    <name>奥森晨跑 5K</name>
+    <type>running</type>
+    <trkseg>
+      <trkpt lat="40.00210" lon="116.39280"><ele>45</ele><time>2026-06-22T06:30:00Z</time></trkpt>
+      <trkpt lat="40.00280" lon="116.39420"><ele>46</ele><time>2026-06-22T06:31:00Z</time></trkpt>
+      <trkpt lat="40.00360" lon="116.39580"><ele>47</ele><time>2026-06-22T06:32:00Z</time></trkpt>
+      <trkpt lat="40.00440" lon="116.39740"><ele>48</ele><time>2026-06-22T06:33:00Z</time></trkpt>
+      <trkpt lat="40.00520" lon="116.39900"><ele>49</ele><time>2026-06-22T06:34:00Z</time></trkpt>
+      <trkpt lat="40.00600" lon="116.40060"><ele>50</ele><time>2026-06-22T06:35:00Z</time></trkpt>
+      <trkpt lat="40.00680" lon="116.40220"><ele>51</ele><time>2026-06-22T06:36:00Z</time></trkpt>
+      <trkpt lat="40.00740" lon="116.40380"><ele>52</ele><time>2026-06-22T06:37:00Z</time></trkpt>
+      <trkpt lat="40.00790" lon="116.40540"><ele>53</ele><time>2026-06-22T06:38:00Z</time></trkpt>
+      <trkpt lat="40.00820" lon="116.40700"><ele>54</ele><time>2026-06-22T06:39:00Z</time></trkpt>
+      <trkpt lat="40.00830" lon="116.40860"><ele>55</ele><time>2026-06-22T06:40:00Z</time></trkpt>
+      <trkpt lat="40.00810" lon="116.41020"><ele>54</ele><time>2026-06-22T06:41:00Z</time></trkpt>
+      <trkpt lat="40.00760" lon="116.41170"><ele>53</ele><time>2026-06-22T06:42:00Z</time></trkpt>
+      <trkpt lat="40.00690" lon="116.41300"><ele>52</ele><time>2026-06-22T06:43:00Z</time></trkpt>
+      <trkpt lat="40.00600" lon="116.41410"><ele>51</ele><time>2026-06-22T06:44:00Z</time></trkpt>
+      <trkpt lat="40.00500" lon="116.41490"><ele>50</ele><time>2026-06-22T06:45:00Z</time></trkpt>
+      <trkpt lat="40.00390" lon="116.41540"><ele>49</ele><time>2026-06-22T06:46:00Z</time></trkpt>
+      <trkpt lat="40.00270" lon="116.41560"><ele>48</ele><time>2026-06-22T06:47:00Z</time></trkpt>
+      <trkpt lat="40.00150" lon="116.41540"><ele>47</ele><time>2026-06-22T06:48:00Z</time></trkpt>
+      <trkpt lat="40.00040" lon="116.41480"><ele>46</ele><time>2026-06-22T06:49:00Z</time></trkpt>
+      <trkpt lat="39.99940" lon="116.41390"><ele>45</ele><time>2026-06-22T06:50:00Z</time></trkpt>
+      <trkpt lat="39.99860" lon="116.41270"><ele>44</ele><time>2026-06-22T06:51:00Z</time></trkpt>
+      <trkpt lat="39.99800" lon="116.41120"><ele>43</ele><time>2026-06-22T06:52:00Z</time></trkpt>
+      <trkpt lat="39.99770" lon="116.40950"><ele>42</ele><time>2026-06-22T06:53:00Z</time></trkpt>
+      <trkpt lat="39.99770" lon="116.40780"><ele>41</ele><time>2026-06-22T06:54:00Z</time></trkpt>
+      <trkpt lat="39.99800" lon="116.40610"><ele>42</ele><time>2026-06-22T06:55:00Z</time></trkpt>
+      <trkpt lat="39.99860" lon="116.40450"><ele>43</ele><time>2026-06-22T06:56:00Z</time></trkpt>
+      <trkpt lat="39.99950" lon="116.40300"><ele>44</ele><time>2026-06-22T06:57:00Z</time></trkpt>
+      <trkpt lat="40.00060" lon="116.40170"><ele>45</ele><time>2026-06-22T06:58:00Z</time></trkpt>
+      <trkpt lat="40.00180" lon="116.40060"><ele>46</ele><time>2026-06-22T06:59:00Z</time></trkpt>
+      <trkpt lat="40.00210" lon="116.39280"><ele>45</ele><time>2026-06-22T07:00:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

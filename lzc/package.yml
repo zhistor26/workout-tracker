@@ -1,0 +1,23 @@
+package: cloud.lazycat.app.workout-tracker
+version: 0.3.5
+name: Workout Tracker
+description: Self-hosted workout tracker for GPX, TCX, and FIT activities with maps, LazyCat Drive import, and SSO.
+author: zhistor26
+homepage: https://github.com/zhistor26/workout-tracker
+license: MIT
+min_os_version: 1.5.0
+permissions:
+  required:
+    - net.internet
+    - document.private
+    - document.read
+    - document.write
+  optional:
+    - net.lan
+locales:
+  zh-CN:
+    name: 运动追踪
+    description: 自托管运动记录应用，支持 GPX/TCX/FIT、懒猫网盘导入与免密登录。
+  en-US:
+    name: Workout Tracker
+    description: Self-hosted workout tracker for GPX, TCX, and FIT with LazyCat Drive and SSO.

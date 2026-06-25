@@ -133,6 +133,10 @@ func (a *App) dashboardHandler(c echo.Context) error {
 }
 
 func (a *App) userLoginHandler(c echo.Context) error {
+	if err := a.redirectIfProxyAuthenticated(c); err != nil {
+		return err
+	}
+
 	return Render(c, http.StatusOK, user.Login())
 }
 
