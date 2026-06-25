@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2">
+  <Activities>
+    <Activity Sport="Biking">
+      <Id>2026-06-23T22:10:00Z</Id>
+      <Lap StartTime="2026-06-23T22:10:00Z">
+        <TotalTimeSeconds>2400</TotalTimeSeconds>
+        <DistanceMeters>18200</DistanceMeters>
+        <Calories>520</Calories>
+        <Intensity>Active</Intensity>
+        <TriggerMethod>Manual</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2026-06-23T22:10:00Z</Time>
+            <Position>
+              <LatitudeDegrees>31.22410</LatitudeDegrees>
+              <LongitudeDegrees>121.47580</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>8</AltitudeMeters>
+            <DistanceMeters>0</DistanceMeters>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2026-06-23T22:18:00Z</Time>
+            <Position>
+              <LatitudeDegrees>31.22980</LatitudeDegrees>
+              <LongitudeDegrees>121.49720</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>9</AltitudeMeters>
+            <DistanceMeters>4850</DistanceMeters>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2026-06-23T22:26:00Z</Time>
+            <Position>
+              <LatitudeDegrees>31.24010</LatitudeDegrees>
+              <LongitudeDegrees>121.50940</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>11</AltitudeMeters>
+            <DistanceMeters>9100</DistanceMeters>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2026-06-23T22:34:00Z</Time>
+            <Position>
+              <LatitudeDegrees>31.25180</LatitudeDegrees>
+              <LongitudeDegrees>121.50130</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>10</AltitudeMeters>
+            <DistanceMeters>13650</DistanceMeters>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2026-06-23T22:50:00Z</Time>
+            <Position>
+              <LatitudeDegrees>31.22410</LatitudeDegrees>
+              <LongitudeDegrees>121.47580</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>8</AltitudeMeters>
+            <DistanceMeters>18200</DistanceMeters>
+          </Trackpoint>
+        </Track>
+      </Lap>
+      <Creator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Device_t">
+        <Name>Workout Tracker Demo</Name>
+      </Creator>
+    </Activity>
+  </Activities>
+</TrainingCenterDatabase>

@@ -2,3 +2,6 @@ manifest: ./lzc-manifest.yml
 contentdir: ./content
 pkgout: ./
 icon: ../assets/logo-small.png
+images:
+  workout-tracker:
+    dockerfile: ./Dockerfile

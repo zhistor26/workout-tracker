@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="workout-tracker-demo">
+  <metadata>
+    <name>香山徒步爬升</name>
+    <time>2026-06-25T00:30:00Z</time>
+  </metadata>
+  <trk>
+    <name>香山徒步爬升</name>
+    <type>hiking</type>
+    <trkseg>
+      <trkpt lat="39.99460" lon="116.18890"><ele>112</ele><time>2026-06-25T00:30:00Z</time></trkpt>
+      <trkpt lat="39.99505" lon="116.18810"><ele>130</ele><time>2026-06-25T00:36:00Z</time></trkpt>
+      <trkpt lat="39.99580" lon="116.18730"><ele>158</ele><time>2026-06-25T00:42:00Z</time></trkpt>
+      <trkpt lat="39.99640" lon="116.18640"><ele>190</ele><time>2026-06-25T00:48:00Z</time></trkpt>
+      <trkpt lat="39.99710" lon="116.18580"><ele>228</ele><time>2026-06-25T00:54:00Z</time></trkpt>
+      <trkpt lat="39.99785" lon="116.18520"><ele>267</ele><time>2026-06-25T01:00:00Z</time></trkpt>
+      <trkpt lat="39.99830" lon="116.18430"><ele>301</ele><time>2026-06-25T01:06:00Z</time></trkpt>
+      <trkpt lat="39.99895" lon="116.18370"><ele>338</ele><time>2026-06-25T01:12:00Z</time></trkpt>
+      <trkpt lat="39.99955" lon="116.18300"><ele>371</ele><time>2026-06-25T01:18:00Z</time></trkpt>
+      <trkpt lat="40.00020" lon="116.18240"><ele>402</ele><time>2026-06-25T01:24:00Z</time></trkpt>
+      <trkpt lat="40.00070" lon="116.18175"><ele>431</ele><time>2026-06-25T01:30:00Z</time></trkpt>
+      <trkpt lat="40.00120" lon="116.18110"><ele>459</ele><time>2026-06-25T01:36:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -17,7 +17,7 @@ import (
 )
 
 var (
-	ErrOpenMissingFile = errors.New("missing file parameter")
+	ErrOpenMissingFile  = errors.New("missing file parameter")
 	ErrOpenFileNotFound = errors.New("file not found")
 )
 
@@ -82,12 +82,17 @@ func resolveLazyCatFilePath(raw string) (string, error) {
 }
 
 func (a *App) openHandler(c echo.Context) error {
-	if err := a.ensureOpenSession(c); err != nil {
-		return err
-	}
-
 	u, ok := a.loadUserFromRequestToken(c)
 	if !ok || u.IsAnonymous() {
+		uid := strings.TrimSpace(c.Request().Header.Get(lazycatUserIDHeader))
+		if a.Config.ProxyAuthEnabled && uid != "" {
+			if err := a.loginProxyAuthUser(c, uid, c.Request().Header.Get(lazycatUserRoleHeader)); err != nil {
+				a.logger.Warn("open handler proxy auth failed", "error", err, "uid", uid)
+			} else {
+				return c.Redirect(http.StatusFound, c.Request().URL.String())
+			}
+		}
+
 		return a.redirectOpenToLogin(c)
 	}
 
@@ -129,23 +134,6 @@ func (a *App) openHandler(c echo.Context) error {
 	return c.Redirect(http.StatusFound, a.echo.Reverse("workout-show", workouts[0].ID))
 }
 
-func (a *App) ensureOpenSession(c echo.Context) error {
-	if _, ok := a.loadUserFromRequestToken(c); ok {
-		return nil
-	}
-
-	uid := strings.TrimSpace(c.Request().Header.Get(lazycatUserIDHeader))
-	if a.Config.ProxyAuthEnabled && uid != "" {
-		if err := a.loginProxyAuthUser(c, uid, c.Request().Header.Get(lazycatUserRoleHeader)); err != nil {
-			a.logger.Warn("open handler proxy auth failed", "error", err, "uid", uid)
-		} else {
-			return c.Redirect(http.StatusFound, c.Request().URL.String())
-		}
-	}
-
-	return a.redirectOpenToLogin(c)
-}
-
 func (a *App) redirectOpenToLogin(c echo.Context) error {
 	a.rememberRedirectAfterLogin(c, c.Request().URL.RequestURI())
 
@@ -162,6 +150,9 @@ func (a *App) loadUserFromRequestToken(c echo.Context) (*database.User, bool) {
 		return a.jwtSecret(), nil
 	})
 	if err != nil {
+		return nil, false
+	}
+	if !token.Valid {
 		return nil, false
 	}
 

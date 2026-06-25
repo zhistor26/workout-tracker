@@ -53,12 +53,6 @@ application:
             hooks:
               fileInput: true
               fileSystemAccess: true
-    - id: wt-netdisk-open
-      on: browser
-      when:
-        - /*
-      do:
-        - src: file:///lzcapp/pkg/content/lazycat-injects/lzc-netdisk-open-inject.js
   file_handler:
     mime:
       - x-lzc-extension/gpx
@@ -67,11 +61,11 @@ application:
       - x-lzc-extension/zip
       - application/gpx+xml
     actions:
-      open: /user/signin?import=%u
+      open: /open?file=%u
 
 services:
   workout-tracker:
-    image: registry.lazycat.cloud/u64111927/jovandeginste/workout-tracker:48d2aacdabd63b7e
+    image: embed:workout-tracker
     environment:
       WT_JWT_ENCRYPTION_KEY: '{{ stable_secret "wt_jwt_encryption_key" }}'
       WT_DATABASE_DRIVER: sqlite

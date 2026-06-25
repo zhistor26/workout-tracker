@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="workout-tracker-demo">
+  <metadata>
+    <name>操场间歇跑 6x400m</name>
+    <time>2026-06-24T11:00:00Z</time>
+  </metadata>
+  <trk>
+    <name>操场间歇跑 6x400m</name>
+    <type>running</type>
+    <trkseg>
+      <trkpt lat="39.99210" lon="116.31810"><ele>51</ele><time>2026-06-24T11:00:00Z</time></trkpt>
+      <trkpt lat="39.99245" lon="116.31910"><ele>51</ele><time>2026-06-24T11:01:00Z</time></trkpt>
+      <trkpt lat="39.99205" lon="116.32000"><ele>52</ele><time>2026-06-24T11:02:00Z</time></trkpt>
+      <trkpt lat="39.99150" lon="116.31950"><ele>52</ele><time>2026-06-24T11:03:00Z</time></trkpt>
+      <trkpt lat="39.99170" lon="116.31840"><ele>51</ele><time>2026-06-24T11:04:00Z</time></trkpt>
+      <trkpt lat="39.99210" lon="116.31810"><ele>51</ele><time>2026-06-24T11:05:00Z</time></trkpt>
+      <trkpt lat="39.99248" lon="116.31915"><ele>51</ele><time>2026-06-24T11:06:00Z</time></trkpt>
+      <trkpt lat="39.99208" lon="116.32006"><ele>52</ele><time>2026-06-24T11:07:00Z</time></trkpt>
+      <trkpt lat="39.99148" lon="116.31955"><ele>52</ele><time>2026-06-24T11:08:00Z</time></trkpt>
+      <trkpt lat="39.99168" lon="116.31845"><ele>51</ele><time>2026-06-24T11:09:00Z</time></trkpt>
+      <trkpt lat="39.99210" lon="116.31810"><ele>51</ele><time>2026-06-24T11:10:00Z</time></trkpt>
+      <trkpt lat="39.99250" lon="116.31920"><ele>51</ele><time>2026-06-24T11:11:00Z</time></trkpt>
+      <trkpt lat="39.99210" lon="116.32010"><ele>52</ele><time>2026-06-24T11:12:00Z</time></trkpt>
+      <trkpt lat="39.99145" lon="116.31958"><ele>52</ele><time>2026-06-24T11:13:00Z</time></trkpt>
+      <trkpt lat="39.99166" lon="116.31848"><ele>51</ele><time>2026-06-24T11:14:00Z</time></trkpt>
+      <trkpt lat="39.99210" lon="116.31810"><ele>51</ele><time>2026-06-24T11:15:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

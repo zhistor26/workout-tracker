@@ -22,6 +22,8 @@ vendor/
 !/assets/*.go
 *_templ.txt
 /frontend/src/generated
+/lzc/build-context/
+/lzc/.lzc-cli-build*/
 
 # Tooling
 .aider*
