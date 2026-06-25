@@ -24,6 +24,7 @@ vendor/
 /frontend/src/generated
 /lzc/build-context/
 /lzc/.lzc-cli-build*/
+/lzc/.lzc-cli-cache/
 
 # Tooling
 .aider*
